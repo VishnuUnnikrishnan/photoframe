@@ -37,6 +37,7 @@ def cutToSize(image, outLength, outHeight):
     image = image.resize((outLength, math.floor(tempHeight)))
     
     difference = tempHeight - outHeight
+    print(difference)
     
     partVal = abs(difference)/2
 
@@ -44,8 +45,8 @@ def cutToSize(image, outLength, outHeight):
     top = math.floor(partVal)
     
     if difference > 0:
-        image = image.crop((0, top, outLength, tempHeight-bot))
-        image = image.rotate(180, expand=1)
+        image = image.crop((0, top, outLength, tempHeight-top))
+        
 
     elif difference < 0:
         tempImage = Image.new(image.mode, (outLength, outHeight), (255, 255, 255))
