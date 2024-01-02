@@ -1,5 +1,6 @@
 from PIL import Image
 import math
+import sys
 
 def palette7Convert(image):
     palettedata = [0x00, 0x00, 0x00,
@@ -73,7 +74,7 @@ def saveImage(image, input, output=None):
         except ValueError:
             pass
 
-        imgOut = "output/"+input[slash:period]+".bmp"
+        imgOut = "photos/"+input[slash:period]+".bmp"
     image.save(imgOut)
 
 def convertFile(path):
@@ -83,7 +84,7 @@ def convertFile(path):
     saveImage(img, path)
 
 def main():
-    path = ""
+    path = sys.argv[1]
     convertFile(path)
     
 
