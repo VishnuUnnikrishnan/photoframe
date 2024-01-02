@@ -2,7 +2,7 @@
 
 Digital Photo Frames are traditionally made of LCD panels and the software is closed source. With the advent of colour e-ink displays, this gives us the oppotunity to build our own photoframe with E-Ink Displays and Open Source software and teh Raspberry Pi 0w.
 
-##Installation
+## Installation
 1. Install Pillow:
    - pip install Pillow
   
