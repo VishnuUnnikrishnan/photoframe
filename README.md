@@ -32,7 +32,7 @@ Converting a photo to be displayed is easy. Upload the file to the rspberry pi a
 
 This will modify the file to be able to be displayed on the eink screen. If the format it incorrect the file will not be displayed and the program will crash.
 
-For More Information: https://blog.v1shnu.com/
+For More Information: [Blog](https://blog.v1shnu.com/build-a-better-digital-photo-frame)
 
 
 
